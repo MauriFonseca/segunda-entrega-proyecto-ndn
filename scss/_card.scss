@@ -1,0 +1,14 @@
+.card{
+    background-color: rgba(159, 107, 157, 0.766);
+    margin: 2%;
+    width: 18rem;
+    &:hover {
+        background-color: rgba(104, 53, 103, 0.766);
+    }
+}
+.row-cols-2{
+    justify-content: center;
+}
+.btn-warning2{
+    background-color: #ffffff;
+}

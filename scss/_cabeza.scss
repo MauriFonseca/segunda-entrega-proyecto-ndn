@@ -1,0 +1,40 @@
+header{
+    background-color: #494747;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.navegacion{
+    display: flex;
+    justify-content: center;
+}
+.navegacion-menu{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 5px 5px;
+}
+.btn{
+    background-color: rgb(213, 213, 41);
+    &:hover{
+        background-color: gainsboro;
+    }
+}
+.title{
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    &:hover{
+        background-color: rgb(104, 53, 103, 0.766);
+        color: rgba(0, 0, 0, 0.914);
+        letter-spacing: 3px;
+        text-decoration: none;
+    }
+}
+//Veni al estudio
+.VE{
+    margin-top: 2em;
+    margin-bottom: 0;
+}

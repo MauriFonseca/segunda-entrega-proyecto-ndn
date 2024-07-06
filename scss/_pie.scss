@@ -1,0 +1,33 @@
+footer{
+    background-color: #494747;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+.footer-center{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}   
+.footer-links{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 2%;
+    gap: 10%;
+}
+.leyenda-footer{
+    justify-content: center;
+}
+.size-items{
+    width: 28px;
+    height: 28px;
+    &:hover{
+        color: rgb(25, 154, 179);
+    }
+}
+
+
+    
