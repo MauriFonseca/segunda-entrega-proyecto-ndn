@@ -4,45 +4,35 @@
   font-family: "Montserrat", sans-serif;
 }
 
-img {
-  width: 100%;
-  height: 100%;
+@keyframes efecto_boton {
+  25% {
+    transform: rotate 90deg;
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-
-iframe {
-  width: 100%;
-  height: auto;
+header {
+  background: linear-gradient(0deg, rgb(142, 58, 180) 10%, rgb(253, 40, 29) 90%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 ul li {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
-select {
-  background-color: rgb(225, 129, 224);
-}
-
-input {
-  background-color: rgb(225, 129, 224);
-}
-
-header {
-  background-color: #494747;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .navegacion {
   display: flex;
   justify-content: center;
 }
-
 .navegacion-menu {
   display: flex;
   flex-wrap: wrap;
@@ -54,9 +44,12 @@ header {
 
 .btn {
   background-color: rgb(213, 213, 41);
+  animation-name: efecto_boton;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
 }
 .btn:hover {
-  background-color: gainsboro;
+  background-color: rgba(251, 0, 117, 0.41);
 }
 
 .title {
@@ -65,8 +58,8 @@ header {
   text-align: center;
 }
 .title:hover {
-  background-color: rgba(104, 53, 103, 0.766);
-  color: rgba(0, 0, 0, 0.914);
+  background-color: rgba(255, 38, 0, 0.448);
+  border-radius: 12px;
   letter-spacing: 3px;
   text-decoration: none;
 }
@@ -76,13 +69,18 @@ header {
   margin-bottom: 0;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
 .card {
-  background-color: rgba(159, 107, 157, 0.766);
+  background-color: rgba(194, 0, 191, 0.478);
   margin: 2%;
   width: 18rem;
 }
 .card:hover {
-  background-color: rgba(104, 53, 103, 0.766);
+  background-color: rgba(126, 0, 124, 0.478);
 }
 
 .row-cols-2 {
@@ -90,7 +88,15 @@ header {
 }
 
 .btn-warning2 {
-  background-color: #ffffff;
+  background-color: rgba(181, 114, 167, 0.8784313725);
+}
+
+select {
+  background-color: rgb(225, 129, 224);
+}
+
+input {
+  background-color: rgb(225, 129, 224);
 }
 
 ._TN {
@@ -106,31 +112,24 @@ header {
 .formTN {
   width: 100%;
 }
-
-.formTN1 {
+.formTN .formTN1 {
   display: flex;
   flex-direction: column;
-  background-color: rgb(154, 74, 169);
+  gap: 1em;
+  background-color: rgba(248, 0, 50, 0.652);
   margin: 0 3% 3% 3%;
   border-radius: 35px;
 }
-
-.label-form {
+.formTN .formTN1 .label-form {
   width: 50%;
   padding: 1%;
 }
-
-._dos {
-  padding-bottom: 2.2%;
-}
-
-.text_espace {
+.formTN .formTN1 .text_espace {
   width: 100%;
   height: 6em;
-  background-color: rgb(225, 129, 224);
+  background-color: rgba(166, 0, 255, 0.256);
 }
-
-.envio_formulario {
+.formTN .formTN1 .envio_formulario {
   padding-left: 4.7em;
 }
 
@@ -145,20 +144,33 @@ header {
   top: 250px;
 }
 
+._dos {
+  padding-bottom: 2.2%;
+}
+
 main {
-  background-color: #494747;
+  background: linear-gradient(0deg, rgb(253, 40, 29) 10%, rgb(142, 58, 180) 90%);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.main-index {
+main-index {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 6px;
   gap: 3px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+iframe {
+  width: 100%;
+  height: auto;
 }
 
 .carousel {
@@ -196,7 +208,7 @@ main {
 }
 
 footer {
-  background-color: #494747;
+  background: linear-gradient(0deg, rgb(142, 58, 180) 10%, rgb(253, 40, 29) 90%);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -227,7 +239,7 @@ footer {
   height: 28px;
 }
 .size-items:hover {
-  color: rgb(25, 154, 179);
+  color: rgb(186, 33, 168);
 }
 
 @media only screen and (min-width: 577px) and (max-width: 711px) {
@@ -259,7 +271,7 @@ footer {
     gap: 3px;
   }
   .btn {
-    background-color: rgba(213, 123, 19, 0.756);
+    background-color: rgba(255, 30, 5, 0.586);
     width: 100%;
   }
   .row-cols-2 {
@@ -270,10 +282,6 @@ footer {
   }
   .leyenda-footer {
     text-align: center;
-  }
-  .footer-links img {
-    width: 100%;
-    height: auto;
   }
   ul {
     padding-left: 0;
@@ -291,6 +299,9 @@ footer {
     height: 6em;
   }
   .form-img {
+    display: none;
+  }
+  .maps {
     display: none;
   }
   .__TN {

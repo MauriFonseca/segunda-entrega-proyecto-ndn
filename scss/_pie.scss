@@ -1,5 +1,6 @@
 footer{
-    background-color: #494747;
+    background: linear-gradient(0deg, rgba(142,58,180,1) 10%, rgba(253,40,29,1) 90%);
+    //background-color: map-get($map: $colors , $key: footer-color);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -22,10 +23,9 @@ footer{
     justify-content: center;
 }
 .size-items{
-    width: 28px;
-    height: 28px;
+    @include sizes(28px, 28px);
     &:hover{
-        color: rgb(25, 154, 179);
+        color: map-get($map: $colors , $key: hover-redes);
     }
 }
 

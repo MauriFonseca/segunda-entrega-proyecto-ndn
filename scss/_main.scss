@@ -1,13 +1,11 @@
-//Reset
+//Reset - Config
 @import "./config/reset";
 @import "./config/vars";
 //Layout
 @import "./cabeza";
-@import "./colors";
 @import "./card";
 @import "./formularios";
 @import "./cuerpo";
 @import "./pie";
-@import "./config/vars.scss";
 //Media Querys
 @import "./mq"

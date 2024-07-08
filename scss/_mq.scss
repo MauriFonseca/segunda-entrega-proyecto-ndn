@@ -27,7 +27,7 @@
             gap: 3px;
         }
         .btn{
-            background-color: rgba(213, 123, 19, 0.756);
+            background-color: map-get($map: $colors , $key: mediaquery-botones);
             width: 100%;
         }
         .row-cols-2{
@@ -38,10 +38,6 @@
         }
         .leyenda-footer{
             text-align: center;
-        }
-        .footer-links img{
-            width: 100%;
-            height: auto;
         }
         ul{
             padding-left: 0;
@@ -55,10 +51,12 @@
             font-size: small;
         }
         .text_espace{
-            width: 100%;
-            height: 6em;
+            @include sizes(100%, 6em);
         }
         .form-img{
+            display: none;
+        }
+        .maps{
             display: none;
         }
         .__TN{       

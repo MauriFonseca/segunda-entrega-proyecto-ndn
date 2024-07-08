@@ -1,14 +1,18 @@
+img {
+    width: 100%;
+    height: 100%;
+}
 .card{
-    background-color: rgba(159, 107, 157, 0.766);
+    background-color: map-get($map: $colors , $key: card-color);
     margin: 2%;
     width: 18rem;
     &:hover {
-        background-color: rgba(104, 53, 103, 0.766);
+        background-color: map-get($map: $colors , $key: card-color-hover);
     }
 }
 .row-cols-2{
     justify-content: center;
 }
 .btn-warning2{
-    background-color: #ffffff;
+    background-color: map-get($map: $colors , $key: card-button);
 }
